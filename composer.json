@@ -1,8 +1,14 @@
 {
-    "name": "mobtexting/mobtexting-php",
+    "name": "mobtexting/sdk",
     "description": "A boilerplate for contributions.",
-    "homepage": "https://github.com/mobtexting/mobtexting-laravel",
+    "homepage": "https://github.com/mobtexting/mobtexting-php",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Sankar Suda",
+            "email": "sankar@mobtexting.com"
+        }
+    ],
     "require": {
         "php": ">=5.6",
         "mobtexting/message-sdk": "dev-master"
