@@ -26,9 +26,8 @@ composer require mobtexting/mobtexting-php
 ### Send an SMS
 
 ```php
-// Send an SMS using Twilio's REST API and PHP
 <?php
-$token = "YYYYYY"; // Your Auth Token from www.twilio.com/console
+$token = "YYYYYY";
 
 $client = new Mobtexting\Client($token);
 $message = $client->messages->send(
