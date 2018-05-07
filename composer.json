@@ -1,0 +1,23 @@
+{
+    "name": "mobtexting/mobtexting-php",
+    "description": "A boilerplate for contributions.",
+    "homepage": "https://github.com/mobtexting/mobtexting-laravel",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6",
+        "mobtexting/message-sdk": "dev-master"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.5",
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mobtexting\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "dev"
+}
