@@ -8,7 +8,7 @@ class Client
 {
     protected $username;
     protected $password;
-    protected $messages;
+    protected $messages = null;
 
     /**
      * Mobtexting constructor.
@@ -20,8 +20,6 @@ class Client
     {
         $this->username = $username;
         $this->password = $password;
-
-        $this->setMessages();
     }
 
     /**
@@ -65,7 +63,18 @@ class Client
      */
     public function getMessages()
     {
+        if (is_null($this->messages)) {
+            $this->setMessages();
+        }
+
         return $this->messages;
+    }
+
+    public function __get($name)
+    {
+        $name = 'get' . ucfirst($name);
+
+        return $this->{$name}();
     }
 
     /**

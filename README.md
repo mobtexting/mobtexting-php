@@ -33,8 +33,8 @@ $client = new Mobtexting\Client($token);
 $message = $client->messages->send(
   '1234567890', // Text this number
   array(
-    'from' => '9991231234', // From a valid Twilio number
-    'text' => 'Hello from Twilio!'
+    'from' => 'MOBtxt',
+    'text' => 'Hello from MOBTEXTING!'
   )
 );
 
